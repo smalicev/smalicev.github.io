@@ -5,11 +5,40 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 	<head>
 		<title>Srdjan Malicevic's Personal Blog Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+		.collapsible {
+		  background-color: #30d0ae;
+		  color: white;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 18px;
+		}
+
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	max-width:50%;
+  max-height:50%;
+}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -55,29 +84,84 @@
 								<div class="container">
 									<h3>Blog</h3>
 									<section>
-									<h4> My first blog post! Eutrophication in the Great Lakes </h4>
-									<h5> October 31st, 2020 </h5>
-									<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-									<p>  This will be my first post and I think I want to talk about
-										eutrophication in the Great Lakes since I just recently did my master's and learned so much about it.</p>
-									<span class="image fit"><img src="images/erie.jpg" alt="" /></span>
+										<h4> Are lithium batteries good for the environment? </h4>
+										<h5> November 22nd, 2020 </h5>
+										<button type="button" class="collapsible">Expand/Collapse</button>
+										<div class="content">
+										<p><br>Some marketing material for batteries would lead you to believe that lithium-ion batteries are a better environmental choice because they
+											last longer. While it makes sense that less battery waste equals less total environmental impact, is this premise true? I’d want to just briefly
+											dip into what people have to say online. Unfortunately, the question of what is really “good” for the environment comes down to a whole lot of
+											nitty gritty details.</p>
+											<img src="images/energizer.jpg" alt="" class="center"/>
+											<h6> This battery pack was priced the same as a non-lithium AA<sub>8</sub> – which should you purchase with equivalent total battery life?</h6>
+											<br>
+											<p>Before I get into any details, I think it’s important to highlight how complicated “environmental impact” can be. When speaking strictly on
+											automotive applications, we can assume that an electric vehicle (EV) would have less greenhouse-gas (GHG) emissions than an internal combustion
+											engine vehicle (ICEV) per mile driven. It’s important to consider <i>how the product is used</i> when determining which is greener. The “life-cycle” of the
+											product is therefore considered to get an accurate estimate for the whole use of the item, as well as initial costs, transporting of raw materials, etc.
+											<a href="https://sustain.ubc.ca/sites/default/files/2018-63%20Lifecycle%20Analysis%20of%20Electric%20Vehicles_Kukreja.pdf">Here’s a great report</a> from UBC showing
+											how an EV released half of the GHG emissions compared to an ICEV over the span of the vehicles life, but in raw material production the EV resulted in 50% more emissions.</p>
+
+											<p>Another unfortunate complication is that not every environmental impact can be condensed to a simple emission/consumption metric and be neatly compared. Local damage to the
+											environment where materials are extracted are hard to define and compare to other damage. It is often the case that nearby biological receptors are damaged from mining effluent
+											or other pollutants. While the GHG emissions of EVs could be lower, its possible that the <a href="https://www.wired.co.uk/article/lithium-batteries-environment-impact">raw material processing/harvesting</a> of lithium is
+											damaging nearby systems and making life worse for a lot of people in  Argentina and other areas in South America where lithium is often processed.</p>
+
+											<p><a href="https://www.mdpi.com/2313-0105/5/2/48/html">One study</a> conducted an LCA for batteries intended for automotive use and found that the bill of materials/supply chain of raw materials incurred a very high environmental burden.
+											Research on this topic is fairly new, and this study is gives great examples of knowledge gaps and difficulties in comparing life cycle
+											inventories. Overall, it seems difficult to get a concrete answer on what is actually better for the environment now that it’s down to the specific details that rely on battery cell
+											configurations and the bill of materials.
+
+											<p>At the end of the day, I’m not really sure If I should hop on the lithium train or not. I think it’s really unfortunate that as a consumer, it feels like much more research is
+											needed (on my part, and in the general body of research) to actually get to a definite conclusion here and make an informed choice.</p>
+										</div>
 
 									<br>
-									<p> Algal blooms have been a problem for Lake Erie since the 60's, and recent
-										 changes in climate and invasive species have made these problems resurface. There's only so much that agricultural best management practices can do,
-										  and there is a growing necessity for new technologies that can reduce nutrient input and even contribute to a circular phosphorus/nitrogen economy.</p>
-										<p> There is some disagreement on whether or not climate change will increase or decrease the level of eutrophication at Lake Erie. Arguments for increasing include
-											higher temperatures (greater biological growth), and more precipitation in general that would lead to more nutrient runoff. Some say that the increased temperatures
-											would lead to lower instantaneous snow melt in the spring and a lower nutrient load overall. Either way, I think it's better to err on the side of caution and try to
-											place proactive measures to ensure eutrophication does not spiral out of control.</p>
-											<p> I got the chance to work on developing a new material that could adsorb phosphorus from agircultural runoff and then be extracted and the phosphorus retained. It
-												was a great project to work on, and through it I became so much more aware of this pressing environmental issue.</p>
+									<br>
+
+
+									<h4> My first blog post! Eutrophication in the Great Lakes </h4>
+									<h5> October 31st, 2020 </h5>
+
+									<button type="button" class="collapsible">Expand/Collapse</button>
+									<div class="content">
+									<p><br> This will be my first post and I think I want to talk about
+										eutrophication in the Great Lakes since I just recently did my master's and learned so much about it.</p>
+									<span class="image"><img src="images/erie.jpg" alt="" /></span>
+
+									<p>Algal blooms have been a problem for Lake Erie since the 60's, and recent
+									changes in climate and invasive species have made these problems resurface. There's only so much that agricultural best management practices can do,
+									and there is a growing necessity for new technologies that can reduce nutrient input and even contribute to a circular phosphorus/nitrogen economy.</p>
+
+									<p>There is some disagreement on whether or not climate change will increase or decrease the level of eutrophication at Lake Erie. Arguments for increasing include
+									higher temperatures (greater biological growth), and more precipitation in general that would lead to more nutrient runoff. Some say that the increased temperatures
+									would lead to lower instantaneous snow melt in the spring and a lower nutrient load overall. Either way, I think it's better to err on the side of caution and try to
+									place proactive measures to ensure eutrophication does not spiral out of control.</p>
+
+									<p>I got the chance to work on developing a new material that could adsorb phosphorus from agircultural runoff and then be extracted and the phosphorus retained. It
+									was a great project to work on, and through it I became so much more aware of this pressing environmental issue.</p>
+									</div>
 									</section>
 
 
 
 
+									<script>
+									var coll = document.getElementsByClassName("collapsible");
+									var z;
 
+									for (z = 0; z < coll.length; z++) {
+									  coll[z].addEventListener("click", function() {
+									    this.classList.toggle("active");
+									    var content = this.nextElementSibling;
+									    if (content.style.display === "block") {
+									      content.style.display = "none";
+									    } else {
+									      content.style.display = "block";
+									    }
+									  });
+									}
+									</script>
 
 
 
